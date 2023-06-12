@@ -15,36 +15,39 @@ background-color: #282b2b;
 
 header {
   background-color: #534848;
-  }
-  .navbar-brand,
-  .navbar-nav {
-margin-left: auto;
-  }
-  
-  ul {
-font-size: 1.3rem;
-  }
+}
+
+.navbar-brand,
+.navbar-nav {
+  margin-left: auto;
+}
+
+ul {
+  font-size: 1.3rem;
+}
 
 /* imagen centro */
 
 .imagen-principal {
-position: relative;
-width: 100%;
-height: 100vh;
-overflow: hidden;
-background-image: url("../img/imagenprincipal.jpg");
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100vh;
-width: 100%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../img/imagenprincipal.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 h5 {
-position: relative;
-text-align: center
+  position: relative;
+  text-align: center;
+  
 }
+
 
 /*contenedor del main*/
 
@@ -144,10 +147,39 @@ text-align: center;
 gap: 5vh;
 }
 
+
+
 .card {
 background-color: black;
 color: white;
 }
+
+    /* página guia de talles */
+
+    .container-fluid-talles {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+
+@media (min-width: 768px) {
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+}
+
 
 /* Contacto */
 
@@ -175,6 +207,16 @@ background-color: #999;
 color: #ffffff;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img-contacto {
+  width: 100vh;
+  height: 100vh;
+  margin: 0 10px;
+}
 
 /*Media queuries*/
 
