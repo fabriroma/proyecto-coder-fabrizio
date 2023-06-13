@@ -140,19 +140,56 @@ background-color: #282b2b;
 
 /* Página puntos de encuentro*/
 
-.puntoencuentro {
-display: flex;
-margin-left: 15%;
-text-align: center;
-gap: 5vh;
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
-
 
 .card {
-background-color: black;
-color: white;
+  flex-basis: calc(25% - 15px);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #282b2b;
+  margin-bottom: 20px;
 }
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card-link {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex-basis: calc(33.33% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-basis: calc(50% - 15px);
+  }
+}
+
+
 
     /* página guia de talles */
 
@@ -183,42 +220,16 @@ color: white;
 
 /* Contacto */
 
+.img-contacto {
+  display: none;
+}
+
 .body-contacto {
 background-color: #282b2b
 }
 
-.form-control {
-background-color: #555;
-color: #fff;
-border: none;
-}
 
-.butn {
-background-color: #777;
-color: #fff;
-border: none;
-}
-
-.butn:hover {
-background-color: #999;
-}
-
-.form-label {
-color: #ffffff;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.image-container img-contacto {
-  width: 100vh;
-  height: 100vh;
-  margin: 0 10px;
-}
-
-/*Media queuries*/
+/*Media*/
 
 @media screen and (max-width: 1024px) {
 
