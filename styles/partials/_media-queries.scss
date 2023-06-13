@@ -1,0 +1,23 @@
+@media screen and (max-width: 1024px) {
+
+    .navbar-toggler {
+    order: -1;
+    .navbar-brand,
+    .navbar-nav {
+    margin-left: auto;
+    }
+    }
+    .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    @media screen and (max-width: 768px) {
+    .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    @media screen and (max-width: 420px) {
+    .galeria {
+    display: inherit;
+    }
+    }

@@ -1,6 +1,9 @@
 header {
   background-color: #534848;
 }
+header .logo-header {
+  animation: jello-diagonal-2 0.8s both;
+}
 header .navbar-brand,
 header .navbar-nav {
   margin-left: auto;
@@ -9,7 +12,29 @@ header .navbar-brand ul,
 header .navbar-nav ul {
   font-size: 1.3rem;
 }
-
+@keyframes jello-diagonal-2 {
+  0% {
+    transform: skew(0deg 0deg);
+  }
+  30% {
+    transform: skew(-25deg -25deg);
+  }
+  40% {
+    transform: skew(15deg, 15deg);
+  }
+  50% {
+    transform: skew(-15deg, -15deg);
+  }
+  65% {
+    transform: skew(5deg, 5deg);
+  }
+  75% {
+    transform: skew(-5deg, -5deg);
+  }
+  100% {
+    transform: skew(0deg 0deg);
+  }
+}
 .imagen-principal {
   position: relative;
   width: 100%;
@@ -52,6 +77,7 @@ body {
      object-fit: cover;
 }
 .galeria .items-galeria {
+  animation: scale-in-hor-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
@@ -96,7 +122,16 @@ body {
   background-color: #ffffff;
   color: white;
 }
-
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 footer {
   display: grid;
   height: 5vh;
@@ -131,6 +166,10 @@ footer .textofooter {
 .contact-main {
   height: 100vh;
 }
+.contact-main .text-center-mb-4 {
+  text-align: center;
+  animation: vibrate-1 0.3s linear infinite both;
+}
 .contact-main .form-control {
   background-color: #555;
   color: #fff;
@@ -146,4 +185,46 @@ footer .textofooter {
 }
 .contact-main .butn:hover {
   background-color: #999;
-}/*# sourceMappingURL=estilo.css.map */
+}
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar-toggler {
+    order: -1;
+  }
+  .navbar-toggler .navbar-brand,
+  .navbar-toggler .navbar-nav {
+    margin-left: auto;
+  }
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 420px) {
+  .galeria {
+    display: inherit;
+  }
+}
