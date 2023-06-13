@@ -137,7 +137,7 @@ background-color: #282b2b;
 
 /* Página puntos de encuentro*/
 
-.puntoencuentro {
+.card-container {
 display: flex;
 margin-left: 15%;
 text-align: center;

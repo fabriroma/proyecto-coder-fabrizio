@@ -1,0 +1,20 @@
+.contact-main {
+    height: 100vh;
+.form-control {
+    background-color: #555;
+    color: #fff;
+    border: none;
+        .form-label {
+    color: #ffffff;
+    }
+    }
+
+    .butn {
+    background-color: #777;
+    color: #fff;
+    border: none;
+        &:hover {
+    background-color: #999;
+    }
+}
+}

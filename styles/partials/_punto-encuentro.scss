@@ -1,0 +1,16 @@
+    .card-container {
+    margin-left: 20px;
+    height: 100vh;
+    .card {
+    background-color: $mainColor;
+    color: white;
+
+    .card-title {
+    color: rgb(102, 92, 92);
+    }
+    .card-link {
+text-decoration: none;
+color: rgb(61, 99, 5);
+    }
+    }
+}
