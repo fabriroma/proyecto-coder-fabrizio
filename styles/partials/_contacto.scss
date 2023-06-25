@@ -1,78 +1,36 @@
-.contact-main {
-    height: 100vh;
-    .text-center-mb-4 {
-        text-align: center;
-            -webkit-animation: vibrate-1 0.3s linear infinite both;
-                    animation: vibrate-1 0.3s linear infinite both;
+.container-formulario {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  .text-formulario {
+      text-align: center;
     }
-.form-control {
-    background-color: #555;
-    color: #fff;
-    border: none;
-        .form-label {
-    color: #ffffff;
+    .form-group {
+      margin-bottom: 20px;
     }
-    }
-
-    .butn {
-    background-color: #777;
-    color: #fff;
-    border: none;
-        &:hover {
-    background-color: #999;
-    }
-}
-}
- @-webkit-keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
-  @keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
-  
+      label {
+          display: block;
+          margin-bottom: 5px;
+        }
+      input[type="text"],
+      textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          background-color: #444;
+          color: #fff;
+        }
+        input[type="submit"] {
+          background-color: #555;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+        }

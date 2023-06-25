@@ -9,10 +9,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100%;
-    h5 {
+    width: 100%; }
+
+    .imagen-principal h5 {
         position: relative;
         text-align: center;
-      }
-  }
-
+        font-size: 5rem;
+        color: rgb(49, 15, 15);
+        font-family: 'Ysabeau', sans-serif;
+      margin-top: 50vh;
+    }
